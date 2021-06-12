@@ -1,0 +1,42 @@
+.req-card{
+  padding: 10px;
+  object-fit: contain;
+  margin: 6px;
+  width: 290px;
+  height: 250px;
+  background-color: #a9bafd;
+  border-radius:20px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+th{
+  padding-right: 8px;
+}
+
+td{
+  text-align: center;
+}
+
+.req-station{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+}
+
+.req-card:hover {
+  cursor: pointer;
+  box-shadow: 0.4px 0.4px 20px rgb(216, 216, 216);
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.table-two{
+  align-items: center;
+  display: flex;
+  padding-top: 6px;
+  padding-left: 20px;
+}

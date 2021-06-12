@@ -1,0 +1,44 @@
+.card {
+  padding: 10px;
+  object-fit: contain;
+  margin: 6px;
+  width: 203px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #dcdde1;
+  border-radius:20px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.card-content{
+  padding: 10px;
+}
+
+.card-number{
+  display: flex;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.card-name{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-reason{
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+}
+.card-type{
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0.4px 0.4px 20px rgb(216, 216, 216);
+  transform: scale(1.02);
+  transition: 0.4s;
+}
