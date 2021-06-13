@@ -9,11 +9,14 @@ function App() {
     <Router>
       <div className="App">
         <Navigation/>
-        <br></br><br></br>
-        <br></br>
-        <PoliceStation/>
-        <hr/><hr/>
-        <Route path="/"><Replaceable/></Route>
+        <Switch>
+      <Route exact path="/">
+      <Replaceable />
+      </Route>
+      <Route exact path="/pol">
+      <PoliceStation />
+      </Route>
+      </Switch>
       </div>
     </Router>
   );
