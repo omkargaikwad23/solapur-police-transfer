@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   table: {
     minWidth: 650,
   },
-  TableHead: {
+  tableHead: {
     fontWeight: 'bold',
     fontSize: 16,
   }

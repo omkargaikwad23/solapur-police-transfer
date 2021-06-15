@@ -1,15 +1,15 @@
-table, th, td {
-  border: 1px solid black;
-}
 
-
-
-th{
+.th{
   background: gray;
   padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-td{
-  padding: 4px;
+ .td{
+  padding: 6px;
 }
+ .report2, .td, .th{
+   border: 1px solid rgb(14, 8, 8);
+
+}
+
