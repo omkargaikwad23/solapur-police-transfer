@@ -1,0 +1,15 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+
+
+th{
+  background: gray;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td{
+  padding: 4px;
+}
