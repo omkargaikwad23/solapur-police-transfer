@@ -6,13 +6,14 @@ import StationReport from './Pages/StationReport/StationReport'
 import StationReportHtml from './Pages/StationReport/StationReportHtml'
 import Navigation from './components/Navigation/Navigation'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
-
+import Login from './Pages/Login/Login'
+import Menu from './components/Navigation/Menu'
 function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Navigation /> */}
+        <Navigation />
+        {/* <Menu/> */}
         <Switch>
           <Route exact path="/">
             <Replaceable />
@@ -20,13 +21,17 @@ function App() {
           <Route exact path="/pol">
             <PoliceStation />
           </Route>
+          <Route  exact path="/login">
+            <Login/>
+          </Route>
+
           <Route exact path="/report">
             <PoliceReport/>
           </Route>
-          <Route exact path="/report2">
+          {/* <Route exact path="/report2">
             <StationReport/>
-          </Route>
-          <Route exact path="/htmlReport">
+          </Route> */}
+          <Route exact path="/report2">
             <StationReportHtml/>
           </Route>
         </Switch>
