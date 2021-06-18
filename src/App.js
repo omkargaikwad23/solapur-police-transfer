@@ -4,6 +4,7 @@ import Replaceable from './Pages/ReplaceableEmp/ReplaceableEmp'
 import PoliceReport from './Pages/PoliceReport/PoliceReport'
 import StationReport from './Pages/StationReport/StationReport'
 import StationReportHtml from './Pages/StationReport/StationReportHtml'
+import EmptyPosInfo from './Pages/EmptyPosInfo/EmptyPosInfo'
 import Navigation from './components/Navigation/Navigation'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './Pages/Login/Login'
@@ -33,6 +34,9 @@ function App() {
           </Route> */}
           <Route exact path="/report2">
             <StationReportHtml/>
+          </Route>
+          <Route exact path="/emptyPos">
+            <EmptyPosInfo/>
           </Route>
         </Switch>
       </div>
