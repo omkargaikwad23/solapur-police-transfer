@@ -21,11 +21,11 @@ export default function EligibleEmp() {
   return (
 
     <div>
-      <h3>&nbsp;पोलिस स्टेशन प्रमाणे रिक्त जागांची माहिती</h3>
+      <h1>&nbsp;पोलिस स्टेशन प्रमाणे रिक्त जागांची माहिती</h1>
 
       <Grid className={classes.root} container>
-        <Grid item xs={12}>
-          <div style={{ display: 'flex', flexWrap: 'wrap'}}>
+        <Grid item sm={12}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', text: 'center', }}>
             <EmptyCard/>
             <EmptyCard/>
             <EmptyCard/>
