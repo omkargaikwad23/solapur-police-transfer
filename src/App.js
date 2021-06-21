@@ -1,4 +1,5 @@
 import "./App.css";
+import GetReport from "./Pages/GetReport/GetReport"
 import PoliceStation from './Pages/PoliceStation/PoliceStation'
 import Replaceable from './Pages/ReplaceableEmp/ReplaceableEmp'
 import PoliceReport from './Pages/PoliceReport/PoliceReport'
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route exact path="/emptyPos">
             <EmptyPosInfo/>
+          </Route>
+          <Route exact path="/getReport">
+            <GetReport/>
           </Route>
         </Switch>
       </div>
