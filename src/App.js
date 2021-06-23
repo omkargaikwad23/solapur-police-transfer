@@ -9,12 +9,13 @@ import EmptyPosInfo from './Pages/EmptyPosInfo/EmptyPosInfo'
 import Navigation from './components/Navigation/Navigation'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './Pages/Login/Login'
+import About from './Pages/About/About1'
 import Menu from './components/Navigation/Menu'
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navigation />
+        {/* <Navigation /> */}
         {/* <Menu/> */}
         <Switch>
           <Route exact path="/">
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route exact path="/getReport">
             <GetReport/>
+          </Route>
+          <Route exact path="/about">
+            <About/>
           </Route>
         </Switch>
       </div>
