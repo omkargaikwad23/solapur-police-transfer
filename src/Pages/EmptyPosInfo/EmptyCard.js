@@ -31,17 +31,17 @@ const useStyles = makeStyles({
   },
 });
 
-export default function OutlinedCard() {
+export default function OutlinedCard({info}) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
-
+  console.log("called file",info);
   return (
     <Card className={classes.root} variant="outlined">
       <CardActionArea>
         <CardContent className={classes.body}>
           <Typography >
             <Box fontWeight="fontWeightBold" m={1}>
-              सोलापूर तालुका पोलीस ठाणे
+              {info.Name}
             </Box>
           </Typography>
 
@@ -59,11 +59,11 @@ export default function OutlinedCard() {
               <TableBody>
                 {/* {rows.map((row) => ( */}
                   <TableRow>
-                    <TableCell align="center">3</TableCell>
-                    <TableCell align="center">1</TableCell>
-                    <TableCell align="center">-3</TableCell>
-                    <TableCell align="center">-2</TableCell>
-                    <TableCell align="center">1</TableCell>
+                    <TableCell align="center">{info.Diff_Asi}</TableCell>
+                    <TableCell align="center">{info.Diff_PC}</TableCell>
+                    <TableCell align="center">{info.Diff_PN}</TableCell>
+                    <TableCell align="center">{info.Diff_HC}</TableCell>
+                    <TableCell align="center">{info.Total_Diff}</TableCell>
                   </TableRow>
                 {/* ))} */}
               </TableBody>
