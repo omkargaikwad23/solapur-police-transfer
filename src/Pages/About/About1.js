@@ -3,7 +3,6 @@ import ProfileCard from "./ProfileCard";
 import { makeStyles, Grid } from "@material-ui/core";
 
 
-
 const useStyle = makeStyles((theme) => ({
   root: {
     

@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './Pages/Login/Login'
 import About from './Pages/About/About1'
 import Menu from './components/Navigation/Menu'
+import Footer from './components/Footer/Footer'
+
 function App() {
   return (
     <Router>
@@ -47,6 +49,8 @@ function App() {
             <About/>
           </Route>
         </Switch>
+        
+        <Footer/>
       </div>
     </Router>
   );
